@@ -1,0 +1,75 @@
+/* Home.css */
+
+/* General styling for the home page */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8fafc; /* light gray background */
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Title styling */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2d3748; /* Dark gray */
+  margin-bottom: 1.5rem;
+}
+
+/* Hint message styling */
+.hint {
+  font-size: 1.2rem;
+  color: #4a5568; /* Darker gray */
+  margin-bottom: 2rem;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.highlight {
+  color: #e53e3e; /* Red color for emphasis */
+  font-weight: bold;
+}
+
+/* Button container styling */
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button styling */
+.button {
+  width: 250px;
+  padding: 1rem;
+  background-color: #3182ce; /* Blue color */
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #2b6cb0; /* Darker blue */
+  transform: scale(1.05); /* Subtle scaling effect */
+}
+
+.link {
+  text-decoration: none;
+  color: white; /* Button text color */
+}
+
+/* Add responsiveness for smaller screen sizes */
+@media (max-width: 600px) {
+  .button {
+    width: 200px;
+  }
+}

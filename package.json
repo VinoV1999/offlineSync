@@ -1,0 +1,19 @@
+{
+  "name": "offlinesync",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run startBackend\" \"npm run startFrontend\" ",
+    "startFrontend": "cd frontend && npm run dev",
+    "startBackend": "cd backend && npx prisma generate && npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
